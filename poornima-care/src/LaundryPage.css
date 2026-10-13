@@ -1,0 +1,299 @@
+/* 🔥 GOOGLE FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* 🔥 GLOBAL RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* BACKGROUND */
+.laundry-container {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+/* SPLIT LAYOUT */
+.laundry-split {
+  display: flex;
+  width: 900px;
+  max-width: 100%;
+  background: rgba(255,255,255,0.95);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+}
+
+/* LEFT PANEL */
+.left-panel {
+  width: 35%;
+  background: linear-gradient(135deg, #1e3a8a, #2563eb);
+  color: white;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.left-panel h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  font-size: 13px;
+  margin-bottom: 15px;
+  opacity: 0.9;
+}
+
+/* 🔥 SEARCH BAR */
+.bag-input {
+  display: flex;
+  width: 100%;
+  gap: 6px;
+  background: white;
+  border-radius: 25px;
+  padding: 4px;
+}
+
+.bag-input input {
+  flex: 1;
+  min-width: 0;
+  border: none;
+  padding: 10px 12px;
+  font-size: 14px;
+  border-radius: 25px;
+  outline: none;
+}
+
+.bag-input button {
+  flex-shrink: 0;
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.bag-input button:hover {
+  opacity: 0.9;
+}
+
+.error-text {
+  color: #ff4d4f;
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+/* RIGHT PANEL */
+.right-panel {
+  width: 65%;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* EMPTY */
+.empty-state {
+  text-align: center;
+  color: gray;
+  font-size: 14px;
+}
+
+/* BAG BOX */
+.bag-box {
+  padding: 16px;
+  border-radius: 14px;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+/* 🔥 TEXT IMPROVEMENT */
+.bag-box p {
+  margin: 6px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* LABEL */
+.bag-box strong {
+  font-weight: 500;
+  color: #374151;
+}
+
+/* VALUE */
+.bag-box span {
+  font-weight: 600;
+  color: #111827;
+}
+
+/* 🌟 OWNER NAME SPECIAL */
+.owner-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1e3a8a;
+}
+
+/* DATE */
+.date {
+  font-size: 11px;
+  color: #6b7280;
+  margin-top: 5px;
+}
+
+/* STATUS COLORS */
+.bag-box.collected {
+  background: #fef3c7;
+}
+.bag-box.washing {
+  background: #dbeafe;
+}
+.bag-box.ironing {
+  background: #e0e7ff;
+}
+.bag-box.ready {
+  background: #dcfce7;
+}
+
+/* TRACKING */
+.tracking-line {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 30px;
+}
+
+/* LINE */
+.tracking-line::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: #ddd;
+  z-index: 0;
+}
+
+/* PROGRESS */
+.progress-bar {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  height: 4px;
+  background: #2563eb;
+  z-index: 1;
+  transition: 0.5s;
+}
+
+/* MOVING DOT */
+.moving-dot {
+  position: absolute;
+  top: 10px;
+  width: 14px;
+  height: 14px;
+  background: #2563eb;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  transition: 0.5s;
+}
+
+/* STEP */
+.step {
+  text-align: center;
+  flex: 1;
+  z-index: 2;
+}
+
+/* CIRCLE */
+.circle {
+  width: 32px;
+  height: 32px;
+  background: #ddd;
+  border-radius: 50%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+}
+
+/* ACTIVE */
+.circle.active {
+  background: #2563eb;
+  color: white;
+}
+
+/* LABEL */
+.label {
+  font-size: 11px;
+  margin-top: 5px;
+  color: gray;
+}
+
+.label.active {
+  color: #2563eb;
+}
+
+/* 📱 MOBILE */
+@media (max-width: 768px) {
+
+  .laundry-split {
+    flex-direction: column;
+  }
+
+  .left-panel,
+  .right-panel {
+    width: 100%;
+  }
+
+  .left-panel {
+    padding: 18px;
+  }
+
+  .bag-input {
+    width: 100%;
+    gap: 5px;
+  }
+
+  .bag-input input {
+    font-size: 13px;
+    padding: 9px;
+  }
+
+  .bag-input button {
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+
+  .right-panel {
+    padding: 18px;
+  }
+
+  .circle {
+    width: 28px;
+    height: 28px;
+    font-size: 11px;
+  }
+
+  .label {
+    font-size: 9px;
+  }
+}
