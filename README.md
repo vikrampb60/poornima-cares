@@ -37,22 +37,22 @@ Poornima's Care gives students and faculty one place to report campus or hostel 
 ### Admin Login
 ![Admin login](poornima-care/docs/screenshots/02-admin-login.png)
 
-### Student Dashboard
+### Student Dashboard Login Success
 ![Student dashboard](poornima-care/docs/screenshots/04-student-dashboard.png)
 
-### Raise a Complaint
-![Complaint form](poornima-care/docs/screenshots/06-complaint-form.png)
-
-### Give a Suggestion
+### Student Dashboard
 ![Suggestion form](poornima-care/docs/screenshots/05-suggestion-form.png)
 
-### Laundry Tracker
+### Raise a Complaint
 ![Laundry tracker](poornima-care/docs/screenshots/07-laundry-tracker.png)
 
-### Admin Dashboard
+### Give a Suggestion
+![Complaint form](poornima-care/docs/screenshots/06-complaint-form.png)
+
+### Admin Dashboard Login Success
 ![Admin dashboard](poornima-care/docs/screenshots/08-admin-dashboard.png)
 
-### Admin Laundry Panel
+### Admin Dashboard
 ![Admin laundry panel](poornima-care/docs/screenshots/09-admin-laundry.png)
 
 ---
